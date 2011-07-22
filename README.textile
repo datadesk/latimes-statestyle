@@ -5,7 +5,7 @@
 e   88   88  88  8   88  88      e   88   88    88   88    88   
 8eee88   88  88  8   88  88ee    8eee88   88    88   88eee 88ee </code></pre>
 
-A Python library that standardizes data about U.S. states
+A Python library that standardizes the names of U.S. states
 
 h2. Features
 
