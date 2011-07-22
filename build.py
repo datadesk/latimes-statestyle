@@ -1,6 +1,15 @@
 import csv
 from pprint import pprint
 
-data = csv.DictReader(open("./statestyle/data.csv", "r"))
-print "STATES = ",
-pprint (list(data))
+# Get the source data
+data = list(csv.DictReader(open("./statestyle/data.csv", "r")))
+
+# Create the normalizer
+crosswalk = {}
+for row in data:
+    for key, value in row.items():
+        if value and key != 'type':
+            crosswalk[value] = row
+
+print "CROSSWALK = ",
+pprint(crosswalk)
