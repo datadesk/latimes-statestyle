@@ -6,3 +6,27 @@ e   88   88  88  8   88  88      e   88   88    88   88    88
 8eee88   88  88  8   88  88ee    8eee88   88    88   88eee 88ee </code></pre>
 
 A Python library that standardizes data about U.S. states
+
+h2. Features
+
+* Give it a state's name, postal abbreviation or fips code and receive a clean object with all other formats as attributes.
+
+h2. Getting started
+
+Getting started is as easy as...
+
+<pre><code>$ pip install latimes-statestyle</code></pre>
+
+Then start feeding it your data:
+
+<pre><code>>> import statestyle
+>> obj = statestyle.get('CA')
+>> print obj.name
+California
+>> print obj.postal
+CA
+>> print obj.ap
+Calif.
+>> obj = statestyle.get(6)
+print obj.name
+California</code></pre>
