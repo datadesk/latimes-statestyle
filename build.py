@@ -10,6 +10,7 @@ for row in data:
     for key, value in row.items():
         if value and key != 'type':
             crosswalk[value] = row
+            crosswalk[value.lower()] = row
 
 print "CROSSWALK = ",
 pprint(crosswalk)

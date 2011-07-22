@@ -10,9 +10,9 @@ def get(string):
     Return an object with metadata about the state.
     """
     try:
-        return State(**CROSSWALK[string])
+        return State(**CROSSWALK[string.strip().lower()])
     except KeyError:
-        raise ValueError("The state you request does not exist")
+        raise ValueError("The state you requested does not exist")
 
 
 class State(object):
