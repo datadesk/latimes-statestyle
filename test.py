@@ -7,12 +7,12 @@ import statestyle
 class BaseTest(unittest.TestCase):
     
     def setUp(self):
-        self.good_postals = ['CA', 'IA', 'dc', 'iL',]
+        self.good_postals = ['CA', 'IA', 'dc', 'iL ',]
         self.bad_postals = ['XX', 'xx', 'Xx',]
         self.good_names = ['California', 'Iowa', 'district of columbia', 'ILLINOIS']
         self.bad_names = ['Los Angeles', 'Cedar Rapids', 'Shaw', 'CHICAGO']
-        self.good_fips = ['06', '19', 11, 17]
-        self.bad_fips = [-6, '190', '11 ', 0]
+        self.good_fips = ['6', '19', 11, 17]
+        self.bad_fips = [-6, '190', '11x ', 0]
         self.good_ap = ['Calif.', 'Iowa', 'd.c.', 'ILL.']
         self.bad_ap = ['Cali', 'iow', 'CD', 'ILLI']
 
@@ -34,9 +34,9 @@ class GetTest(BaseTest):
         [statestyle.get(i) for i in self.good_names]
         [self.assertRaises(ValueError, statestyle.get, i) for i in self.bad_names]
 
-#    def test_fips(self):
-#        [statestyle.get(i) for i in self.good_fips]
-#        [self.assertRaises(ValueError, statestyle.get, i) for i in self.bad_fips]
+    def test_fips(self):
+        [statestyle.get(i) for i in self.good_fips]
+        [self.assertRaises(ValueError, statestyle.get, i) for i in self.bad_fips]
 
     def test_ap(self):
         [statestyle.get(i) for i in self.good_ap]

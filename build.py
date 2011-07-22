@@ -11,6 +11,10 @@ for row in data:
         if value and key != 'type':
             crosswalk[value] = row
             crosswalk[value.lower()] = row
+            try:
+                crosswalk[int(value)] = row
+            except:
+                pass
 
 print "CROSSWALK = ",
 pprint(crosswalk)

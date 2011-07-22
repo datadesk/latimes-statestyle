@@ -1,16 +1,20 @@
 from data import CROSSWALK
 
 
-def get(string):
+def get(value):
     """
-    Accepts a string and tries to match it a U.S. state or territory.
+    Accepts a value and tries to match it a U.S. state or territory.
     
     Works with postal abbreviations, full names, AP abbreviations and FIPS codes.
     
     Return an object with metadata about the state.
     """
+    if isinstance(value, basestring):
+        value = value.strip().lower()
+    elif isinstance(value, (int, float)):
+        value = str(value)
     try:
-        return State(**CROSSWALK[string.strip().lower()])
+        return State(**CROSSWALK[value])
     except KeyError:
         raise ValueError("The state you requested does not exist")
 
