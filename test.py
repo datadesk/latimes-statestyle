@@ -11,7 +11,7 @@ class BaseTest(unittest.TestCase):
         self.bad_postals = ['XX', 'xx', 'Xx',]
         self.good_names = ['California', 'Iowa', 'district of columbia', 'ILLINOIS']
         self.bad_names = ['Los Angeles', 'Cedar Rapids', 'Shaw', 'CHICAGO']
-        self.good_fips = ['6', '19', 11, 17]
+        self.good_fips = ['6', '19', 11, 17, '08']
         self.bad_fips = [-6, '190', '11x ', 0]
         self.good_ap = ['Calif.', 'Iowa', 'd.c.', 'ILL.']
         self.bad_ap = ['Cali', 'iow', 'CD', 'ILLI']

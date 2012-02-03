@@ -9,8 +9,15 @@ def get(value):
     
     Return an object with metadata about the state.
     """
+    # Strip leading zeroes of any fips that come in as strings
+    try:
+        value = int(value)
+    except ValueError:
+        pass
+    # Clean up any strings
     if isinstance(value, basestring):
         value = value.strip().lower()
+    # Convert numbers back to strings
     elif isinstance(value, (int, float)):
         value = str(value)
     try:
