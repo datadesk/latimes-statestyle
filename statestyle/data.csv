@@ -1,60 +1,60 @@
-"name","postal","fips","ap","type"
-"Alabama","AL",1,"Ala.","state"
-"Alaska","AK",2,"Alaska","state"
-"Arizona","AZ",4,"Ariz.","state"
-"Arkansas","AR",5,"Ark.","state"
-"California","CA",6,"Calif.","state"
-"Colorado","CO",8,"Colo.","state"
-"Connecticut","CT",9,"Conn.","state"
-"Delaware","DE",10,"Del.","state"
-"District of Columbia","DC",11,"D.C.",
-"Florida","FL",12,"Fla.","state"
-"Georgia","GA",13,"Ga.","state"
-"Hawaii","HI",15,"Hawaii","state"
-"Idaho","ID",16,"Idaho","state"
-"Illinois","IL",17,"Ill.","state"
-"Indiana","IN",18,"Ind.","state"
-"Iowa","IA",19,"Iowa","state"
-"Kansas","KS",20,"Kan.","state"
-"Kentucky","KY",21,"Ky.","state"
-"Louisiana","LA",22,"La.","state"
-"Maine","ME",23,"Maine","state"
-"Maryland","MD",24,"Md.","state"
-"Massachusetts","MA",25,"Mass.","state"
-"Michigan","MI",26,"Mich.","state"
-"Minnesota","MN",27,"Minn.","state"
-"Mississippi","MS",28,"Miss.","state"
-"Missouri","MO",29,"Mo.","state"
-"Montana","MT",30,"Mont.","state"
-"Nebraska","NE",31,"Neb.","state"
-"Nevada","NV",32,"Nev.","state"
-"New Hampshire","NH",33,"N.H.","state"
-"New Jersey","NJ",34,"N.J.","state"
-"New Mexico","NM",35,"N.M.","state"
-"New York","NY",36,"N.Y.","state"
-"North Carolina","NC",37,"N.C.","state"
-"North Dakota","ND",38,"N.D.","state"
-"Ohio","OH",39,"Ohio","state"
-"Oklahoma","OK",40,"Okla.","state"
-"Oregon","OR",41,"Ore.","state"
-"Pennsylvania","PA",42,"Pa.","state"
-"Rhode Island","RI",44,"R.I.","state"
-"South Carolina","SC",45,"S.C.","state"
-"South Dakota","SD",46,"S.D.","state"
-"Tennessee","TN",47,"Tenn.","state"
-"Texas","TX",48,"Texas","state"
-"Utah","UT",49,"Utah","state"
-"Vermont","VT",50,"Vt.","state"
-"Virginia","VA",51,"Va.","state"
-"Washington","WA",53,"Wash.","state"
-"West Virginia","WV",54,"W.Va.","state"
-"Wisconsin","WI",55,"Wis.","state"
-"Wyoming","WY",56,"Wyo.","state"
-"American Samoa","AS",60,,
-"Federated States of Micronesia","FM",64,,
-"Guam","GU",66,,
-"Marshall Islands","MH",68,,
-"Northern Mariana Islands","MP",69,,
-"Palau","PW",70,,
-"Puerto Rico","PR",72,,
-"Virgin Islands","VI",78,,
+name,postal,fips,ap,type,stateface
+Alabama,AL,1,Ala.,state,B
+Alaska,AK,2,Alaska,state,A
+Arizona,AZ,4,Ariz.,state,D
+Arkansas,AR,5,Ark.,state,C
+California,CA,6,Calif.,state,E
+Colorado,CO,8,Colo.,state,F
+Connecticut,CT,9,Conn.,state,G
+Delaware,DE,10,Del.,state,H
+District of Columbia,DC,11,D.C.,,y
+Florida,FL,12,Fla.,state,I
+Georgia,GA,13,Ga.,state,J
+Hawaii,HI,15,Hawaii,state,K
+Idaho,ID,16,Idaho,state,M
+Illinois,IL,17,Ill.,state,N
+Indiana,IN,18,Ind.,state,O
+Iowa,IA,19,Iowa,state,L
+Kansas,KS,20,Kan.,state,P
+Kentucky,KY,21,Ky.,state,Q
+Louisiana,LA,22,La.,state,R
+Maine,ME,23,Maine,state,U
+Maryland,MD,24,Md.,state,T
+Massachusetts,MA,25,Mass.,state,S
+Michigan,MI,26,Mich.,state,V
+Minnesota,MN,27,Minn.,state,W
+Mississippi,MS,28,Miss.,state,Y
+Missouri,MO,29,Mo.,state,X
+Montana,MT,30,Mont.,state,Z
+Nebraska,NE,31,Neb.,state,c
+Nevada,NV,32,Nev.,state,g
+New Hampshire,NH,33,N.H.,state,d
+New Jersey,NJ,34,N.J.,state,e
+New Mexico,NM,35,N.M.,state,f
+New York,NY,36,N.Y.,state,h
+North Carolina,NC,37,N.C.,state,a
+North Dakota,ND,38,N.D.,state,b
+Ohio,OH,39,Ohio,state,i
+Oklahoma,OK,40,Okla.,state,j
+Oregon,OR,41,Ore.,state,k
+Pennsylvania,PA,42,Pa.,state,l
+Rhode Island,RI,44,R.I.,state,m
+South Carolina,SC,45,S.C.,state,n
+South Dakota,SD,46,S.D.,state,o
+Tennessee,TN,47,Tenn.,state,p
+Texas,TX,48,Texas,state,q
+Utah,UT,49,Utah,state,r
+Vermont,VT,50,Vt.,state,t
+Virginia,VA,51,Va.,state,s
+Washington,WA,53,Wash.,state,u
+West Virginia,WV,54,W.Va.,state,w
+Wisconsin,WI,55,Wis.,state,v
+Wyoming,WY,56,Wyo.,state,x
+American Samoa,AS,60,,,
+Federated States of Micronesia,FM,64,,,
+Guam,GU,66,,,
+Marshall Islands,MH,68,,,
+Northern Mariana Islands,MP,69,,,
+Palau,PW,70,,,
+Puerto Rico,PR,72,,,
+Virgin Islands,VI,78,,,

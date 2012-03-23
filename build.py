@@ -8,7 +8,7 @@ data = list(csv.DictReader(open("./statestyle/data.csv", "r")))
 crosswalk = {}
 for row in data:
     for key, value in row.items():
-        if value and key != 'type':
+        if value and key not in ['type', 'stateface']:
             crosswalk[value] = row
             crosswalk[value.lower()] = row
             try:

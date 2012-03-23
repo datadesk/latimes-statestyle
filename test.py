@@ -25,19 +25,20 @@ class GetTest(BaseTest):
         self.assertEqual(obj.name, 'California')
         self.assertEqual(obj.type, 'state')
         self.assertEqual(obj.ap, 'Calif.')
+        self.assertEqual(obj.stateface, 'E')
     
     def test_postals(self):
         [statestyle.get(i) for i in self.good_postals]
         [self.assertRaises(ValueError, statestyle.get, i) for i in self.bad_postals]
-
+    
     def test_names(self):
         [statestyle.get(i) for i in self.good_names]
         [self.assertRaises(ValueError, statestyle.get, i) for i in self.bad_names]
-
+    
     def test_fips(self):
         [statestyle.get(i) for i in self.good_fips]
         [self.assertRaises(ValueError, statestyle.get, i) for i in self.bad_fips]
-
+    
     def test_ap(self):
         [statestyle.get(i) for i in self.good_ap]
         [self.assertRaises(ValueError, statestyle.get, i) for i in self.bad_ap]

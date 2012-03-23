@@ -71,7 +71,7 @@ if len(sys.argv) > 1 and sys.argv[1] == 'bdist_wininst':
         file_info[0] = '\\PURELIB\\%s' % file_info[0]
 
 setup(name='latimes-statestyle',
-      version='0.1.1',
+      version='0.1.2',
       description='Standardizes data about U.S. states',
       author='Ben Welsh',
       author_email='ben.welsh@latimes.com',

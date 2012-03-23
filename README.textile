@@ -9,7 +9,8 @@ A Python library that standardizes the names of U.S. states
 
 h2. Features
 
-* Give it a state's name, postal abbreviation or fips code and receive a clean object with all other formats as attributes.
+* Submit a state's name, postal abbreviation or fips code and receive a clean object with all other formats as attributes.
+* State objects also provide the "stateface" code for "ProPublica's web font of state shapes":http://propublica.github.com/stateface/
 
 h2. Getting started
 
@@ -20,13 +21,15 @@ Getting started is as easy as...
 Then start feeding it your data:
 
 <pre><code>>> import statestyle
->> obj = statestyle.get('CA')
->> print obj.name
+>>> obj = statestyle.get('CA')
+>>> print obj.name
 California
->> print obj.postal
+>>> print obj.postal
 CA
->> print obj.ap
+>>> print obj.ap
 Calif.
->> obj = statestyle.get(6)
-print obj.name
-California</code></pre>
+>>> obj = statestyle.get(6)
+>>> print obj.name
+California
+>>> obj.stateface
+"E"</code></pre>

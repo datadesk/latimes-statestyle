@@ -30,12 +30,13 @@ class State(object):
     """
     One of America's states or territories.
     """
-    def __init__(self, postal, name, fips, ap, type):
+    def __init__(self, postal, name, fips, ap, type, stateface):
         self.postal = postal
         self.name = name
         self.fips = fips
         self.ap = ap
         self.type = type
+        self.stateface = stateface
     
     def __repr__(self):
         return '<%s: %s>' % (self.__class__.__name__, self.name)
