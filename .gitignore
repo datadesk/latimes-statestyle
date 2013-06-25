@@ -2,3 +2,4 @@ dist/*
 *#
 *.pyc
 scratch.py
+.tox
