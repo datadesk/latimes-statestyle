@@ -1,4 +1,4 @@
-from data import CROSSWALK
+from .data import CROSSWALK
 
 
 def get(value):
@@ -15,7 +15,7 @@ def get(value):
     except ValueError:
         pass
     # Clean up any strings
-    if isinstance(value, basestring):
+    if _is_string(value):
         value = value.strip().lower()
     # Convert numbers back to strings
     elif isinstance(value, (int, float)):
@@ -46,3 +46,14 @@ class State(object):
     
     def __unicode__(self):
         return self.name
+
+
+def _is_string(possible_string):
+    """
+    Checks if an object is a string.
+    Works with Python2 and Python3.
+    """
+    try:
+        return isinstance(possible_string, basestring)
+    except NameError:
+        return isinstance(possible_string, str)
