@@ -5,10 +5,10 @@ import statestyle
 
 
 class BaseTest(unittest.TestCase):
-    
+
     def setUp(self):
-        self.good_postals = ['CA', 'IA', 'dc', 'iL ',]
-        self.bad_postals = ['XX', 'xx', 'Xx',]
+        self.good_postals = ['CA', 'IA', 'dc', 'iL ']
+        self.bad_postals = ['XX', 'xx', 'Xx']
         self.good_names = ['California', 'Iowa', 'district of columbia', 'ILLINOIS']
         self.bad_names = ['Los Angeles', 'Cedar Rapids', 'Shaw', 'CHICAGO']
         self.good_fips = ['6', '19', 11, 17, '08']
@@ -16,8 +16,9 @@ class BaseTest(unittest.TestCase):
         self.good_ap = ['Calif.', 'Iowa', 'd.c.', 'ILL.']
         self.bad_ap = ['Cali', 'iow', 'CD', 'ILLI']
 
+
 class GetTest(BaseTest):
-    
+
     def test_attr(self):
         obj = statestyle.get("CA")
         self.assertEqual(obj.postal, 'CA')
@@ -26,22 +27,30 @@ class GetTest(BaseTest):
         self.assertEqual(obj.type, 'state')
         self.assertEqual(obj.ap, 'Calif.')
         self.assertEqual(obj.stateface, 'E')
-    
+
     def test_postals(self):
-        [statestyle.get(i) for i in self.good_postals]
-        [self.assertRaises(ValueError, statestyle.get, i) for i in self.bad_postals]
-    
+        for i in self.good_postals:
+            statestyle.get(i)
+        for i in self.bad_postals:
+            self.assertRaises(ValueError, statestyle.get, i)
+
     def test_names(self):
-        [statestyle.get(i) for i in self.good_names]
-        [self.assertRaises(ValueError, statestyle.get, i) for i in self.bad_names]
-    
+        for i in self.good_names:
+            statestyle.get(i)
+        for i in self.bad_names:
+            self.assertRaises(ValueError, statestyle.get, i)
+
     def test_fips(self):
-        [statestyle.get(i) for i in self.good_fips]
-        [self.assertRaises(ValueError, statestyle.get, i) for i in self.bad_fips]
-    
+        for i in self.good_fips:
+            statestyle.get(i)
+        for i in self.bad_fips:
+            self.assertRaises(ValueError, statestyle.get, i)
+
     def test_ap(self):
-        [statestyle.get(i) for i in self.good_ap]
-        [self.assertRaises(ValueError, statestyle.get, i) for i in self.bad_ap]
+        for i in self.good_ap:
+            statestyle.get(i)
+        for i in self.bad_ap:
+            self.assertRaises(ValueError, statestyle.get, i)
 
 
 if __name__ == '__main__':
