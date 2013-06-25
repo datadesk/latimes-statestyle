@@ -70,13 +70,26 @@ if len(sys.argv) > 1 and sys.argv[1] == 'bdist_wininst':
     for file_info in data_files:
         file_info[0] = '\\PURELIB\\%s' % file_info[0]
 
-setup(name='latimes-statestyle',
-      version='0.1.2',
-      description='Standardizes data about U.S. states',
-      author='Ben Welsh',
-      author_email='ben.welsh@latimes.com',
-      packages=packages,
-      cmdclass = cmdclasses,
-      data_files=data_files,
-      include_package_data=True,
-     )
+setup(
+    name='latimes-statestyle',
+    version='0.1.2',
+    description='Standardizes data about U.S. states',
+    author='Ben Welsh',
+    author_email='ben.welsh@latimes.com',
+    packages=packages,
+    cmdclass=cmdclasses,
+    data_files=data_files,
+    include_package_data=True,
+    classifiers=[
+        'Development Status :: 5 - Production/Stable',
+        'Intended Audience :: Developers',
+        'Programming Language :: Python :: 2',
+        'Programming Language :: Python :: 2.5',
+        'Programming Language :: Python :: 2.6',
+        'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.1',
+        'Programming Language :: Python :: 3.2',
+        'Programming Language :: Python :: 3.3',
+    ],
+)
