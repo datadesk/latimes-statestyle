@@ -22,7 +22,7 @@ Getting started is as easy as...
 
 Then start feeding it your data:
 
-<pre><code>>> import statestyle
+<pre><code>>>> import statestyle
 >>> obj = statestyle.get('CA')
 >>> print obj.name
 California
@@ -34,7 +34,13 @@ Calif.
 >>> print obj.name
 California
 >>> obj.stateface
-"E"</code></pre>
+"E"
+>>> statestyle.get("foo")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "statestyle/__init__.py", line 27, in get
+    raise ValueError("The state you requested does not exist")
+ValueError: The state you requested does not exist</code></pre>
 
 h2. Contributing
 
