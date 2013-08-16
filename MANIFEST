@@ -2,7 +2,3 @@
 setup.py
 statestyle/__init__.py
 statestyle/data.py
-statestyle/__pycache__/__init__.cpython-32.pyc
-statestyle/__pycache__/__init__.cpython-33.pyc
-statestyle/__pycache__/data.cpython-32.pyc
-statestyle/__pycache__/data.cpython-33.pyc
