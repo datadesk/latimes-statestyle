@@ -38,4 +38,4 @@ California
 
 h2. Contributing
 
-If you would like to add another feature or change existing data, edit ``statestyle/data.csv`` and then run ``python build.py``, which will remake the data file imported by the library.
+If you would like to add another feature or change existing data, edit @statestyle/data.csv@ and then run @python build.py@, which will remake the data file imported by the library.
