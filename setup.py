@@ -72,7 +72,7 @@ if len(sys.argv) > 1 and sys.argv[1] == 'bdist_wininst':
 
 setup(
     name='latimes-statestyle',
-    version='0.1.2',
+    version='0.1.3',
     description='Standardizes data about U.S. states',
     author='Ben Welsh',
     author_email='ben.welsh@latimes.com',
