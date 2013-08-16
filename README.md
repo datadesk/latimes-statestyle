@@ -1,9 +1,9 @@
 <pre><code>8""""8                           8""""8                         
-    8      eeeee eeeee eeeee eeee    8      eeeee e    e e     eeee 
-    8eeeee   8   8   8   8   8       8eeeee   8   8    8 8     8    
-        88   8e  8eee8   8e  8eee        88   8e  8eeee8 8e    8eee 
-    e   88   88  88  8   88  88      e   88   88    88   88    88   
-    8eee88   88  88  8   88  88ee    8eee88   88    88   88eee 88ee </code></pre>
+8      eeeee eeeee eeeee eeee    8      eeeee e    e e     eeee 
+8eeeee   8   8   8   8   8       8eeeee   8   8    8 8     8    
+    88   8e  8eee8   8e  8eee        88   8e  8eeee8 8e    8eee 
+e   88   88  88  8   88  88      e   88   88    88   88    88   
+8eee88   88  88  8   88  88ee    8eee88   88    88   88eee 88ee </code></pre>
 
 A Python library that standardizes the names of U.S. states
 
