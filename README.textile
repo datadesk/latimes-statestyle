@@ -11,7 +11,7 @@ A Python library that standardizes the names of U.S. states
 
 h2. Features
 
-* Submit a state's name, postal abbreviation or fips code and receive a clean object with all other formats as attributes.
+* Submit a state's name, postal abbreviation or "FIPS code":https://en.wikipedia.org/wiki/Federal_Information_Processing_Standards and receive a clean object with all other formats as attributes.
 * State objects also provide the "stateface" code for "ProPublica's web font of state shapes":http://propublica.github.com/stateface/
 
 h2. Getting started
