@@ -7,6 +7,8 @@ e   88   88  88  8   88  88      e   88   88    88   88    88
 
 A Python library that standardizes the names of U.S. states
 
+"!https://travis-ci.org/datadesk/latimes-statestyle.png!":https://travis-ci.org/datadesk/latimes-statestyle
+
 h2. Features
 
 * Submit a state's name, postal abbreviation or fips code and receive a clean object with all other formats as attributes.
