@@ -27,6 +27,9 @@ class GetTest(BaseTest):
         self.assertEqual(obj.type, 'state')
         self.assertEqual(obj.ap, 'Calif.')
         self.assertEqual(obj.stateface, 'E')
+        self.assertEqual(obj.__repr__(), '<State: California>')
+        self.assertEqual(obj.__str__(), 'California')
+        self.assertEqual(obj.__unicode__(), u'California')
 
     def test_postals(self):
         for i in self.good_postals:
