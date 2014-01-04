@@ -19,7 +19,7 @@ A Python library that standardizes the names of U.S. states
 Features
 --------
 
--   Submit a state’s name, postal abbreviation or [FIPS
+-   Submit a state’s name, postal code or Associated Press abbreviation or [FIPS
     code](https://en.wikipedia.org/wiki/Federal_Information_Processing_Standards)
     and receive a clean object with all other formats as attributes.
 -   State objects also provide the “stateface” code for [ProPublica’s
