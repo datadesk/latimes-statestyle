@@ -1,0 +1,2 @@
+[report]
+exclude_lines = def _is_string
