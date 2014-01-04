@@ -7,6 +7,8 @@ python:
 install:
   - pip install -r requirements.txt
 script:
+  - pep8 statestyle/__init__.py
+  - pyflakes statestyle
   - coverage run test.py
 after_success:
   - coveralls
