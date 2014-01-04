@@ -7,7 +7,14 @@ e   88   88  88  8   88  88      e   88   88    88   88    88
 
 A Python library that standardizes the names of U.S. states
 
-[![](https://travis-ci.org/datadesk/latimes-statestyle.png)](https://travis-ci.org/datadesk/latimes-statestyle)
+[![Build Status](https://travis-ci.org/datadesk/latimes-statestyle.png?branch=master)](https://travis-ci.org/datadesk/latimes-statestyle)
+[![PyPI version](https://badge.fury.io/py/latimes-statestyle.png)](http://badge.fury.io/py/latimes-statestyle)
+[![Coverage Status](https://coveralls.io/repos/datadesk/latimes-statestyle/badge.png?branch=master)](https://coveralls.io/r/datadesk/latimes-statestyle?branch=master)
+
+* Issues: [https://github.com/datadesk/latimes-statestyle/issues](https://github.com/datadesk/latimes-statestyle/issues)
+* Packaging: [https://pypi.python.org/pypi/latimes-statestyle](https://pypi.python.org/pypi/latimes-statestyle)
+* Testing: [https://travis-ci.org/datadesk/latimes-statestyle](https://travis-ci.org/datadesk/latimes-statestyle)
+* Coverage: [https://coveralls.io/r/datadesk/latimes-statestyle](https://coveralls.io/r/datadesk/latimes-statestyle)
 
 Features
 --------
