@@ -60,7 +60,7 @@ Traceback (most recent call last):
     File "<stdin>", line 1, in <module>
     File "statestyle/__init__.py", line 27, in get
     raise ValueError("The state you requested does not exist")
-ValueError: The state you requested does not exist</code>
+ValueError: The state you requested does not exist
 ```
 
 Contributing
