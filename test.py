@@ -9,7 +9,7 @@ class BaseTest(unittest.TestCase):
     def setUp(self):
         self.good_postals = ['CA', 'IA', 'dc', 'iL ']
         self.bad_postals = ['XX', 'xx', 'Xx']
-        self.good_names = ['California', 'Iowa', 'district of columbia', 'ILLINOIS']
+        self.good_names = ['Washington DC', 'California', 'Iowa', 'district of columbia', 'ILLINOIS']
         self.bad_names = ['Los Angeles', 'Cedar Rapids', 'Shaw', 'CHICAGO']
         self.good_fips = ['6', '19', 11, 17, '08']
         self.bad_fips = [-6, '190', '11x ', 0]

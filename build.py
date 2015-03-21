@@ -16,5 +16,11 @@ for row in data:
             except:
                 pass
 
+# Add a DC hack
+crosswalk['Washington, DC'] = crosswalk['District of Columbia']
+crosswalk['Washington DC'] = crosswalk['District of Columbia']
+crosswalk['washington, dc'] = crosswalk['District of Columbia']
+crosswalk['washington dc'] = crosswalk['District of Columbia']
+
 print "CROSSWALK = ",
 pprint(crosswalk)
