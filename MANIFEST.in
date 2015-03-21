@@ -1,0 +1,3 @@
+include README.md
+include statestyle/__init__.py
+include statestyle/data.py
