@@ -55,6 +55,10 @@ class GetTest(BaseTest):
         for i in self.bad_ap:
             self.assertRaises(ValueError, statestyle.get, i)
 
+    def test_dict(self):
+        o = statestyle.get("IA")
+        self.assertEqual(o['ap'], o.ap)
+        o.to_dict()
 
 if __name__ == '__main__':
     unittest.main()

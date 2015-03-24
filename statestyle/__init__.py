@@ -39,6 +39,9 @@ class State(object):
         self.type = type
         self.stateface = stateface
 
+    def __getitem__(self, key):
+        return getattr(self, key)
+
     def __repr__(self):
         return '<%s: %s>' % (self.__class__.__name__, self.name)
 
@@ -47,6 +50,9 @@ class State(object):
 
     def __unicode__(self):
         return self.name
+
+    def to_dict(self):
+        return self.__dict__
 
 
 def _is_string(possible_string):
