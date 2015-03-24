@@ -60,7 +60,7 @@ Calif.
 # The type of geographic area
 >>> print obj.type
 state
-# The ProPublic stateface code
+# The ProPublica stateface code
 >>> obj.stateface
 "E"
 ```
