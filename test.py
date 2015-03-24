@@ -58,7 +58,12 @@ class GetTest(BaseTest):
     def test_dict(self):
         o = statestyle.get("IA")
         self.assertEqual(o['ap'], o.ap)
-        o.to_dict()
+        with self.assertRaises(AttributeError):
+            o['foobar']
+        self.assertDictEqual(o.__dict__, o.to_dict())
+        self.assertDictEqual(dict(o), o.to_dict())
+        self.assertDictEqual(dict(o), o.__dict__)
+
 
 if __name__ == '__main__':
     unittest.main()

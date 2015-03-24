@@ -1,4 +1,4 @@
-from __future__ import absolute_import
+from __future__ import absolute_import, unicode_literals
 from .data import CROSSWALK
 
 
@@ -38,6 +38,9 @@ class State(object):
         self.ap = ap
         self.type = type
         self.stateface = stateface
+
+    def __iter__(self):
+        return self.__dict__.iteritems()
 
     def __getitem__(self, key):
         return getattr(self, key)
