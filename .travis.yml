@@ -1,15 +1,24 @@
 language: python
+
 sudo: false
+
+cache:
+  directories:
+    - $HOME/.cache/pip
+
 python:
   - "2.7"
-  - "3.2"
   - "3.3"
   - "3.4"
+
 install:
+   - export XDG_CACHE_HOME=$HOME/.cache/
   - pip install -r requirements.txt
+
 script:
   - pep8 statestyle/__init__.py
   - pyflakes statestyle
   - coverage run test.py
+
 after_success:
   - coveralls
