@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='latimes-statestyle',
-    version='0.1.5',
+    version='0.1.6',
     description='Standardizes data about U.S. states',
     author='Ben Welsh',
     author_email='ben.welsh@latimes.com',
